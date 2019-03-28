@@ -1,0 +1,27 @@
+$size: 50px;
+
+#skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .test {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 370px;
+    justify-content: center;
+  }
+  h2 {
+    font-variant: small-caps;
+    width: 100%;
+  }
+  div {
+    margin: 10px;
+
+    p {
+      text-decoration: underline;
+    }
+
+  }
+}

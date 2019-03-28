@@ -1,0 +1,41 @@
+$degree: 10deg;
+
+@keyframes vibrate {
+  0% {
+    transform: rotateZ(0);
+  }
+  20% {
+    transform: rotateZ(-$degree);
+  }
+  40% {
+    transform: rotateZ($degree);
+  }
+  60% {
+    transform: rotateZ(-$degree);
+  }
+  80% {
+    transform: rotateZ($degree);
+  }
+  100% {
+    transform: rotateZ(0);
+
+  }
+}
+
+@keyframes spin {
+  0%{
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0%{
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}

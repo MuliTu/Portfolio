@@ -1,0 +1,17 @@
+$size: 50px;
+
+#icon {
+  width: 256px;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  img {
+    margin: 0 5px 0 5px ;
+    height: $size;
+    width: $size;
+  }
+  div {
+    margin: auto;
+  }
+
+}

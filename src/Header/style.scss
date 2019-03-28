@@ -1,0 +1,57 @@
+@import '../styles/_animations';
+
+$color-before: #1c1f24;
+$height: 80px;
+$fontSize: 15px;
+
+.header,.scrolling {
+  transition: height, line-height 1s;
+  color: white;
+  line-height:$height;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: $color-before;
+  border: solid thin black;
+  position: sticky;
+  height: $height;
+  top: 0;
+  div {
+    cursor: pointer;
+    height: $height;
+    text-align: center;
+    width: 130px;
+    font-size: $fontSize;
+    transition: background-color, font-size 0.5s;
+    p {
+      line-height: $height;
+      margin: auto;
+      &:hover {
+        animation: vibrate 0.6s ease-in-out;
+      }
+    }
+    &:hover {
+      font-size: $fontSize + 10;
+      transition: background-color, font-size 0.5s;
+    }
+
+  }
+
+}
+
+//.scrolling {
+//  transition: height 1s;
+//  height: $height - 40;
+//  div {
+//    height: $height - 40;
+//    p {
+//      transition: line-height 1s;
+//      line-height: $height - 40;
+//      margin: auto;
+//      &:hover {
+//        animation: vibrate 0.6s ease-in-out;
+//      }
+//    }
+//  }
+//}
+

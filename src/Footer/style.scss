@@ -1,0 +1,52 @@
+@import "../styles/_animations";
+
+$mainBackgroundColor: #1c1f24;
+
+#footer {
+  text-align: left;
+  width: 100%;
+  color: white;
+  height: auto;
+  background-color: $mainBackgroundColor;
+  p {
+    width: 100%;
+  }
+  .copyrights {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+  .content {
+    margin: 0 5px 0 5px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section {
+    max-width: 292px;
+    $color: white;
+    $spin-time: 0.5s ease;
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .social {
+      background-color: $color;
+      border-radius: 50%;
+      margin: 5px;
+      &:hover {
+        transition: filter $spin-time;
+        filter: grayscale(0);
+        animation: spin $spin-time;
+      }
+      &:not(hover) {
+        transition: filter $spin-time;
+        filter: grayscale(1);
+        animation: spin-reverse $spin-time;
+      }
+    }
+
+  }
+
+}
