@@ -57,12 +57,10 @@ export const skillsList = [
         category: 'Version Control',
         list: [
             {
-                name: 'GitHub',
-                img: 'https://www.pngkey.com/png/full/178-1787243_github-icon-png-github-icon-white-png.png'
+                name: 'Git',
+                img: 'http://nxt-web.co.il/assets/img/git.png'
             },
         ],
-
-
     },
     {
         category: 'State Management',

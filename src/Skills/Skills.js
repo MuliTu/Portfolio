@@ -9,14 +9,16 @@ const Skills = ({skills}) => {
         <div id='skills'>
             <h2>Skills</h2>
                 {
-                    skills.map(data =>
+                    skills.map((data,dataIndex) =>
                         (
-                            <div>
+                            <div key={dataIndex}>
                                 <p>{data.category}</p>
                             <div className='skills-wrapper'>
                                 {
-                                    data.list.map(skill => (
+                                    data.list.map((skill,index) => (
+                                        <div key={index}>
                                         <Pill name={skill.name} image={skill.img}/>
+                                        </div>
                                     ))
                                 }
                             </div>
