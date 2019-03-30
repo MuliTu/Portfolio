@@ -8,7 +8,8 @@ const Icon = ({path, type, children}) => {
             ? `mailto:${path}`
             : `tel:${path}`}>
             <div>
-                <img src={require(`../images/${type}.png`)}/>
+                <img src={require(`../images/${type}.png`)}
+                     alt='icon'/>
             </div>
             <div>{children}</div>
         </a>

@@ -2,11 +2,11 @@ import React from 'react';
 import Pill from '../Pill/Pill';
 import './style.scss'
 
-//TODO change test name
+
 
 const Skills = ({skills}) => {
     return (
-        <div id='skills'>
+        <div id='Skills'>
             <h2>Skills</h2>
                 {
                     skills.map((data,dataIndex) =>

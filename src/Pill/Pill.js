@@ -4,7 +4,7 @@ import './style.scss'
 const Pill = ({name, image}) => {
     return (
         <div id='pill'>
-            <img src={image}/>
+            <img src={image} alt='pillImage'/>
             <div>{name}</div>
         </div>
     );

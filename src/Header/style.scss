@@ -31,7 +31,6 @@ $fontSize: 15px;
       }
     }
     &:hover {
-      font-size: $fontSize + 10;
       transition: background-color, font-size 0.5s;
     }
 
@@ -39,19 +38,5 @@ $fontSize: 15px;
 
 }
 
-//.scrolling {
-//  transition: height 1s;
-//  height: $height - 40;
-//  div {
-//    height: $height - 40;
-//    p {
-//      transition: line-height 1s;
-//      line-height: $height - 40;
-//      margin: auto;
-//      &:hover {
-//        animation: vibrate 0.6s ease-in-out;
-//      }
-//    }
-//  }
-//}
+
 

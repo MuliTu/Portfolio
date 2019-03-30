@@ -1,47 +1,31 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import './style.scss'
 
-class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isScroll: false
-        }
-    }
+export const Header = ({titles}) => {
 
-    scrollHandler = () => this.setState({
-        isScroll: window.pageYOffset > 16
-    });
-
-    titleEntity = (title, index) => (
+    const titleEntity = (title, index) => (
         <div key={index}>
-            <p>{title}</p>
+            <Link
+                activeClass="active"
+                to={title.replace(' ', '_')}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}>
+                <p> {title}</p>
+            </Link>
         </div>
     );
 
-    componentDidMount() {
-        document.addEventListener('scroll', this.scrollHandler)
-
-    }
-
-
-    componentWillUnmount() {
-        document.removeEventListener('scroll', this.scrollHandler)
-    }
-
-
-    render() {
-        const {titles} = this.props;
-        const {isScroll} = this.state;
-        return (
-            <div className={`header ${isScroll ? 'scrolling' : ''}`}>
-                {
-                    titles.map(this.titleEntity)
-                }
-            </div>
-        );
-    }
-
+    return (
+        <div className='header'>
+            {
+                titles.map(titleEntity)
+            }
+        </div>
+    );
 
 };
 
