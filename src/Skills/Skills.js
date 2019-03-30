@@ -13,8 +13,7 @@ const Skills = ({skills}) => {
                         (
                             <div>
                                 <p>{data.category}</p>
-                            <div className={'test'}>
-
+                            <div className='skills-wrapper'>
                                 {
                                     data.list.map(skill => (
                                         <Pill name={skill.name} image={skill.img}/>

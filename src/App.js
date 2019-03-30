@@ -8,6 +8,9 @@ import { skillsList } from './skills';
 import Background from './Background/Background';
 
 //TODO fix background
+//TODO fix Contact us icon
+//TODO create page for projects
+
 
 class App extends Component {
     render() {
@@ -17,9 +20,9 @@ class App extends Component {
                 <Header titles={headerTitles}/>
                 {/*<Background />*/}
                 <Main/>
-                <hr className='slicer'/>
+                <hr/>
                 <Skills skills={skillsList}/>
-                <hr className='slicer'/>
+                <hr/>
                 <Footer/>
             </div>
         );

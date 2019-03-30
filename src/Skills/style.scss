@@ -5,11 +5,11 @@ $size: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  .test {
+  .skills-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 370px;
+    max-width: 370px;
     justify-content: center;
   }
   h2 {
