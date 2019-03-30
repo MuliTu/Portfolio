@@ -18,7 +18,7 @@ class App extends Component {
         return (
             <div className='App'>
                 <Header titles={headerTitles}/>
-                {/*<Background />*/}
+                <Background />
                 <Main/>
                 <hr/>
                 <Skills skills={skillsList}/>

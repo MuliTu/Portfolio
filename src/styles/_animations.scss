@@ -39,3 +39,14 @@ $degree: 10deg;
     transform: rotateZ(-360deg);
   }
 }
+
+@keyframes changeSize {
+  from {
+    color: #9c9c9c;
+  }
+
+  to {
+    color: white;
+
+  }
+}

@@ -1,13 +1,27 @@
+@import "../styles/_animations";
+
+$background-size: 500px;
+
 #background {
-  img {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
+  height: $background-size;
+  background: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat fixed;
+  background-size: cover;
   div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: $background-size;
+    color: white;
+    background-color: rgba(20, 20, 20, 0.5);
+    font-size: 5vh;
+    font-variant: petite-caps;
+    p {
+      margin: 0;
+      padding-top: $background-size /2
+    }
+    b {
+      animation: changeSize;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+    }
   }
 }
