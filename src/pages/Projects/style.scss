@@ -1,0 +1,42 @@
+$size: 40px;
+
+#Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .project {
+    width: 48%;
+    word-wrap: break-word;
+    justify-self: left;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    img {
+      height: $size;
+      width: $size;
+    }
+    a {
+      color: white;
+      font-style: italic;
+      text-underline: white;
+      margin: 15px;
+    }
+    p {
+      margin: 5px;
+      font-weight: bold;
+    }
+    .title-wrapper {
+      flex-wrap: wrap;
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .project-content {
+      margin: 15px;
+    }
+  }
+
+}

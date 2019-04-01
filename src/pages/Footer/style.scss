@@ -8,6 +8,8 @@ $mainBackgroundColor: #1c1f24;
   color: white;
   height: auto;
   background-color: $mainBackgroundColor;
+  display: flex;
+  flex-direction: column;
   p {
     width: 100%;
   }
@@ -37,12 +39,10 @@ $mainBackgroundColor: #1c1f24;
       margin: 5px;
       &:hover {
         transition: filter $spin-time;
-        filter: grayscale(0);
         animation: spin $spin-time;
       }
       &:not(hover) {
         transition: filter $spin-time;
-        filter: grayscale(1);
         animation: spin-reverse $spin-time;
       }
     }
