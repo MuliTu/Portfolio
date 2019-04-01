@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-import About from './About/About';
-import Skills from './Skills/Skills';
+import Header from './pages/Header/Header';
+import Footer from './pages/Footer/Footer';
+import About from './pages/About/About';
+import Skills from './pages/Skills/Skills';
 import { skillsList } from './skills';
-import Background from './Background/Background';
+import Background from './components/Background/Background';
 
 //TODO fix Contact us icon
 //TODO create page for projects

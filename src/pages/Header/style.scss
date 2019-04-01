@@ -1,4 +1,4 @@
-@import '../styles/_animations';
+@import '../../styles/animations';
 
 $color-before: #1c1f24;
 $height: 80px;
@@ -26,12 +26,15 @@ $fontSize: 15px;
     p {
       line-height: $height;
       margin: auto;
+
       &:hover {
         animation: vibrate 0.6s ease-in-out;
+        color: sandybrown;
       }
     }
     &:hover {
-      transition: background-color, font-size 0.5s;
+      border-bottom: solid thin white;
+      transition: background-color,font-size 0.5s;
     }
 
   }

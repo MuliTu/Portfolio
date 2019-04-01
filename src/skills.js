@@ -15,7 +15,6 @@ export const skillsList = [
                 img: 'http://www.stickpng.com/assets/images/58482acecef1014c0b5e4a1e.png'
             },
         ],
-
     },
     {
         category: 'Languages',
@@ -37,7 +36,6 @@ export const skillsList = [
                 img: 'https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png'
             },
         ],
-
     },
     {
         category: 'Tools',
@@ -51,7 +49,6 @@ export const skillsList = [
                 img: 'https://cdn.freebiesupply.com/logos/large/2x/visual-studio-code-logo-png-transparent.png'
             },
         ],
-
     },
     {
         category: 'Version Control',
@@ -74,7 +71,5 @@ export const skillsList = [
                 img: 'http://www.stickpng.com/assets/images/5848309bcef1014c0b5e4a9a.png'
             },
         ],
-
-
     },
 ];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import Icon from '../Icon/Icon';
+import Icon from '../../components/Icon/Icon';
 
 import './style.scss'
 
@@ -10,10 +10,10 @@ const Footer = () => {
             <div className='content'>
                 <div className='section'>
                     <p>Social</p>
-                    <SocialIcon className='social' url={'http://www.linkedin.com/in/muli-turiel'}/>
-                    <SocialIcon className='social' url={'http://www.facebook.com/muli.turiel'}/>
-                    <SocialIcon className='social' url={'http://github.com/MuliTu'}/>
-                    <SocialIcon className='social' url={'http://www.instagram.com/muli4'}/>
+                    <SocialIcon className='spinning-icon' url={'http://www.linkedin.com/in/muli-turiel'}/>
+                    <SocialIcon className='spinning-icon' url={'http://www.facebook.com/muli.turiel'}/>
+                    <SocialIcon className='spinning-icon' url={'http://github.com/MuliTu'}/>
+                    <SocialIcon className='spinning-icon' url={'http://www.instagram.com/muli4'}/>
                 </div>
                 <div className='section'>
                     <p>Contact Me</p>
