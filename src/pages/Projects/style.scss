@@ -1,4 +1,5 @@
 $size: 40px;
+$mainBackgroundColor: #1c1f24;
 
 #Projects {
   display: flex;
@@ -6,18 +7,16 @@ $size: 40px;
   flex-wrap: wrap;
   justify-content: center;
   .project {
+    display: flex;
+    flex-direction: column;
     width: 48%;
     word-wrap: break-word;
     justify-self: left;
-    background-color: black;
+    background-color: #1c1f24;
     color: white;
     margin: 10px;
     border-radius: 10px;
     text-align: left;
-    img {
-      height: $size;
-      width: $size;
-    }
     a {
       color: white;
       font-style: italic;
@@ -36,6 +35,19 @@ $size: 40px;
     }
     .project-content {
       margin: 15px;
+    }
+    .tags {
+      display: flex;
+      > div {
+        margin: 4px;
+      }
+    }
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      float: right;
+      bottom: 0;
+      right: 0;
     }
   }
 

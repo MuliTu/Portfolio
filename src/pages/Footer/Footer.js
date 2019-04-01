@@ -6,7 +6,7 @@ import './style.scss'
 
 const Footer = () => {
     return (
-        <footer id='Contact_Me'>
+        <footer id='Contact'>
             <div className='content'>
                 <div className='section'>
                     <p>Social</p>

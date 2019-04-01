@@ -9,10 +9,9 @@ $size: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 370px;
     justify-content: center;
+    width: min-content;
   }
-
   div {
     margin: 10px;
     p {

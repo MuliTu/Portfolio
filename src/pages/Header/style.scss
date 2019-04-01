@@ -1,5 +1,5 @@
-@import '../../styles/animations';
-
+@import '../../global-style/animations';
+@import "../../global-style/_background";
 $color-before: #1c1f24;
 $height: 80px;
 $fontSize: 15px;
@@ -11,7 +11,7 @@ $fontSize: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background: $color-before;
+  background: $background-color;
   border: solid thin black;
   position: sticky;
   height: $height;

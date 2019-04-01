@@ -1,13 +1,13 @@
-@import "../../styles/animations";
+@import "../../global-style/animations";
+@import "../../global-style/_background";
+$spin-time: 0.5s ease;
 
-$mainBackgroundColor: #1c1f24;
-
-#Contact_Me {
+#Contact {
   text-align: left;
   width: 100%;
   color: white;
   height: auto;
-  background-color: $mainBackgroundColor;
+  background-color: $background-color;
   display: flex;
   flex-direction: column;
   p {
@@ -26,15 +26,13 @@ $mainBackgroundColor: #1c1f24;
   }
   .section {
     max-width: 292px;
-    $color: white;
-    $spin-time: 0.5s ease;
     @media (max-width: 600px) {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
     .spinning-icon {
-      background-color: $color;
+      background-color:white;
       border-radius: 50%;
       margin: 5px;
       &:hover {

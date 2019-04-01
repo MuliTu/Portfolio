@@ -5,7 +5,7 @@ export const projects = [
             'You forgot who you searched before? don\'t worry... i saved for you :) ',
         link: 'https://mulitu.github.io/SoundCloud-Hooks/',
         git: 'https://github.com/MuliTu/SoundCloud-Hooks',
-        tags:['React','React-Hooks']
+        tags:['React','React-Hooks','Sass/Scss']
     },
     {
         name: 'Batman Cinema',
@@ -14,6 +14,6 @@ export const projects = [
             ' of course delete movie if you wish.',
         link: 'https://mulitu.github.io/BatmanCinema/',
         git: 'https://github.com/MuliTu/BatmanCinema',
-        tags:['React','Redux'],
+        tags:['React','Redux','Sass/Scss'],
     },
 ];
