@@ -30,9 +30,9 @@ class App extends Component {
                 <hr/>
                 <Projects projects={projects} list={list}/>
                 <hr/>
-                <Skills skills={skillsList}/>
-                <hr/>
                 <Education/>
+                <hr/>
+                <Skills skills={skillsList}/>
                 <hr/>
                 <Footer/>
             </div>
