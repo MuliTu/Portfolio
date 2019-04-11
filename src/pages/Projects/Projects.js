@@ -1,11 +1,12 @@
 import React from 'react';
 import { getImage } from './utilis';
 import './style.scss'
+import Title from '../../components/Title/Title';
 
 const Projects = ({projects,list}) => {
     return (
         <div id={'Projects'}>
-            <h2>Projects</h2>
+            <Title text={'Projects'}/>
             {
                 projects.map((x, index) => (
                     <div key={index} className='project'>

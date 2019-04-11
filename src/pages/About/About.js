@@ -1,13 +1,14 @@
 import React from 'react';
 import './style.scss'
-
+import Title from '../../components/Title/Title';
+const imagePath = 'https://media.licdn.com/dms/image/C5603AQGxdxGlBif_jg/profile-displayphoto-shrink_200_200/0?e=1559174400&v=beta&t=flF1s14VIP4sxWtCDcuYWWCO9gN21VVRAqTlLQAA-uk';
 const About = () => {
     return (
         <div id='About'>
-            <h2>About Me</h2>
+            <Title text={'About me'}/>
             <div className='image'>
                 <img
-                    src='https://media.licdn.com/dms/image/C5603AQGxdxGlBif_jg/profile-displayphoto-shrink_200_200/0?e=1559174400&v=beta&t=flF1s14VIP4sxWtCDcuYWWCO9gN21VVRAqTlLQAA-uk'
+                    src={imagePath}
                     alt='myPicture'/>
             </div>
             <div>

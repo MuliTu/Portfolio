@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import Icon from '../../components/Icon/Icon';
+import Icon from '../../UI/Icon/Icon';
 
 import './style.scss'
 

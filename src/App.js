@@ -4,21 +4,23 @@ import Header from './pages/Header/Header';
 import Footer from './pages/Footer/Footer';
 import About from './pages/About/About';
 import Skills from './pages/Skills/Skills';
-import { skillsList } from './data/skills/skills';
-import Background from './components/Background/Background';
+import Background from './UI/Background/Background';
 import Projects from './pages/Projects/Projects';
+import { skillsList } from './data/skills/skills';
 import { projects } from './data/projects';
 import { framework } from './data/skills/framework';
 import { stateManagement } from './data/skills/stateManagement';
 import { languages } from './data/skills/languages';
+import Education from './pages/Education/Education';
 
 //TODO fix Contact us icon
 //TODO create page for projects
 
 
 class App extends Component {
+
     render() {
-        const headerTitles = ['About', 'Projects','Skills', 'Contact'];
+        const headerTitles = ['About', 'Projects','Skills','Education', 'Contact'];
         const list = [...framework.list,...stateManagement.list,...languages.list];
         return (
             <div className='App'>
@@ -29,6 +31,8 @@ class App extends Component {
                 <Projects projects={projects} list={list}/>
                 <hr/>
                 <Skills skills={skillsList}/>
+                <hr/>
+                <Education/>
                 <hr/>
                 <Footer/>
             </div>

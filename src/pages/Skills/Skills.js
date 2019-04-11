@@ -1,13 +1,14 @@
 import React from 'react';
-import Pill from '../../components/Pill/Pill';
+import Pill from '../../UI/Pill/Pill';
 import './style.scss'
+import Title from '../../components/Title/Title';
 
 
 
 const Skills = ({skills}) => {
     return (
         <div id='Skills'>
-            <h2>Skills</h2>
+            <Title text={'Skills'}/>
                 {
                     skills.map((data,dataIndex) =>
                         (
